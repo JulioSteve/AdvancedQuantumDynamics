@@ -2,7 +2,8 @@ import numpy as np
 import sympy as sp
 import math
 
-J,U = sp.symbols('J U')
+J=1
+U=1
 
 def fill_sites(N,L):
     Sets = []
@@ -50,3 +51,4 @@ L = N
 ###########################################################################################################################
 print(f"\nThere are {math.comb(N+L-1,N)} possible states to distribute {N} particles in {L} sites.")
 print(f"{fill_sites(N,L)}\n")
+
